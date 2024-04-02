@@ -357,6 +357,13 @@
 			{
 				document.querySelectorAll(".endText").forEach(ea=>{ ea.style.opacity =  1;});
 			}, 6000);
+			setTimeout(() =>
+			{
+				document.body.addEventListener('click', e=>{
+				    window.location = "https://deepai.org/video";
+				})
+ 				btnContainer.style.cursor = "pointer";
+			}, 7000);
 		}
 		document.getElementById("redPill").addEventListener('click', () =>
 		{
